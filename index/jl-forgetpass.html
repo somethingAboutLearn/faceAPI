@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>重置密码</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/jl-forgetpass.css"/>
+		<script src="../static/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/jl-forgetpass.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header class="jl-bartop">
+			<a class="jl-sign" href="jl-forgetpass.html">重置密码</a>
+		</header>
+		<form id="jl-reset" action="jl-forgetpass.php" method="post">
+			<input type="text" name="jlresetuser" id="jl-reset-user" value="" placeholder="账号" />
+			<input type="text" name="jlnewpass" id="jl-newpass" value="" placeholder="新密码" autocomplete="off" />
+			<input type="text" name="jlnewpassagain" id="jl-newpass-again" value="" placeholder="再次输入密码" autocomplete="off" />
+			<input type="text" name="jlusername" id="jl-username" value="" placeholder="输入姓名验证" />
+			<input type="submit" id="jl-reset-submit" />
+			<a href="../index.html" id="jl-back">返回</a>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  background-image: url(../img/jl-bg-1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative; }
+
+.jl-bartop {
+  width: 100%;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center; }
+
+.jl-sign {
+  margin: 0 auto;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.5); }
+
+#jl-reset {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 50px;
+  position: relative; }
+
+#jl-reset-user {
+  display: block;
+  width: 40%;
+  height: 30px;
+  border-radius: 2px;
+  border: none;
+  border: 1px solid #888;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+#jl-newpass {
+  display: block;
+  width: 40%;
+  height: 30px;
+  border-radius: 2px;
+  border: none;
+  border: 1px solid #888;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+#jl-newpass-again {
+  display: block;
+  width: 40%;
+  height: 30px;
+  border-radius: 2px;
+  border: none;
+  border: 1px solid #888;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+#jl-username{
+	display: block;
+  width: 40%;
+  height: 30px;
+  border-radius: 2px;
+  border: none;
+  border: 1px solid #888;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#jl-userphoto{
+	display: block;
+  width: 40%;
+  height: 30px;
+  border-radius: 2px;
+  border: none;
+  border: 1px solid #888;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#jl-reset-submit {
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  background: rgba(0, 0, 0, 0.3); }
+
+a#jl-back{
+	display: inline-block;
+	width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  vertical-align: bottom;
+  text-align: center;
+  line-height: 30px;
+  font-size: 13px;
+}
+
+input.error {
+  border: 1px solid red; }
+
+label.error {
+  display: block;
+  position: absolute;
+  font-size: 12px;
+  color: #FF0000;
+  z-index: 1;
+  margin-top: -20px; }
+
+.imgbox{
+	width:200px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+	border: 1px solid #888;
+}
+.imgbox img{
+    width:100%;
+}
+.imgbox #loading{
+    height:2px;
+    width:0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:red;
+}

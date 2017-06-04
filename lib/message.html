@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p>
+			<?php echo $message?>
+			<span>3</span>
+			秒后跳转页面，如果没有跳转
+			<a href="<?php echo $src?>">请点击此处</a>
+		</p>
+	</body>
+</html>
+<script type="text/javascript">
+	let span=document.querySelector('span');
+    let a=document.querySelector('a');
+    let src=a.href;
+	//设置a连接地址
+    a.onclick=function (event) {
+        event.preventDefault();
+        if(src=="http://localhost/face/admin/index.html"){
+            top.location.href=src;
+        }else {
+            location.href=src;
+        }
+    }
+    //设置3秒后自动跳转的地址
+    let i=3;
+    let t=setInterval(function () {
+        i--;
+        span.innerHTML=i;
+        if(i==0){
+            clearInterval(t);
+            if(src=="http://localhost/face/admin/index.html"){
+                top.location.href=src;
+            }else {
+                location.href=src;
+            }
+            return;
+        }
+    },1000)
+</script>

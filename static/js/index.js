@@ -1,0 +1,26 @@
+'use strict';
+$(function(){
+	//验证sign表单
+	$('#jl-input').validate({
+		rules:{
+			jl_usernum:{
+				required:true,
+				rangelength:[11,11],
+			},
+			jl_userpass:{
+				required:true,
+				rangelength:[6,20],
+			},
+		},
+		messages:{
+			jl_usernum:{
+				required:'账号不存在',
+				rangelength:'账号不存在',
+			},
+			jl_userpass:{
+				required:'密码输入有误',
+				rangelength:'密码输入有误',
+			},
+		},
+	});
+})

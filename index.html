@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>学生考勤系统</title>
+		<link rel="stylesheet" type="text/css" href="static/css/jl-sign.css"/>
+		<script src="static/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/jl-forgetpass.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header class="jl-bartop">
+			<a class="jl-sign" href="index.html">学生考勤系统</a>
+		</header>
+		<form id="jl-input" action="index/jl-login.php" method="post">
+			<p>登录</p>
+			<input type="text" name="jl_usernum" id="jl-user" value="" placeholder="账号" required="required" />
+			<input type="password" name="jl_userpass" id="jl-password" value="" placeholder="密码" required="required" autocomplete="off" />
+			<div id="jl_vercode">
+				<input type="text" name="jl_yzm" id="jl_yzm" value="" placeholder="验证码" /> 
+				<img src="lib/yzm.php" onclick="this.src='lib/yzm.php?name=jia'+Math.random()"/>
+			</div>
+			<button class="jl-submit">登录</button>
+			<a id="jl-forget" href="index/jl-forgetpass.html">忘记密码</a>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>添加学生</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/addstudent.css"/>
+		<script src="../static/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/addstudent.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/uploadimage.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header class="jl-bartop">
+			<a class="jl-sign" href="addstudent.html">添加学生</a>
+		</header>
+		<form id="jl-reset" action="addstudent.php" method="post">
+			<input type="text" name="jlresetuser" id="jl-reset-user" value="" placeholder="学生学号" />
+			<input type="text" name="jlnewpass" id="jl-newpass" value="" placeholder="密码" autocomplete="off" />
+			<input type="text" name="jlnewpassagain" id="jl-newpass-again" value="" placeholder="再次输入密码" autocomplete="off" />
+			<input type="text" name="jlusername" id="jl-username" value="" placeholder="学生姓名" />
+			<input type="file" name="jluserphoto" id="jl-userphoto" value="" placeholder="图片" />
+			<input type="hidden" name="img" id="form" value="">
+			<div class="imgbox">
+				<img src="" id="img">
+	            <div id="loading"></div>
+			</div>
+			<input type="submit" id="jl-reset-submit" />
+			<a href="../index.html" id="jl-back">返回</a>
+		</form>
+	</body>
+</html>

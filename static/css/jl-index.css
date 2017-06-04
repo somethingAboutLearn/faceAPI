@@ -1,0 +1,252 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html, body, .jl-content {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+/*house*/
+.jl-content {
+  position: relative;
+  background-image: url(../img/jl-bg-1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  perspective: 200px; }
+
+.jl-ver {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0 80px;
+  box-sizing: border-box;
+  }
+
+.jl-ver div{
+	width: 33.3333333333%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.jl-ver div:nth-of-type(2){
+	text-align: center;
+	font-size: 30px;
+}
+.jl-ver div:nth-of-type(3){
+	text-align: right;
+}
+.jl-ver div:nth-of-type(3) a{
+	text-decoration: none;
+	color: #f00;
+}
+.jl-lt {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(../img/house-right-bottom.png);
+  background-size: 100%;
+  margin-left: -200px;
+  margin-top: -200px;
+  background-image: url(../img/house-left-top.png); }
+
+.jl-rt {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(../img/house-right-bottom.png);
+  background-size: 100%;
+  margin-top: -200px;
+  background-image: url(../img/house-right-top.png); }
+
+.jl-lb {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(../img/house-right-bottom.png);
+  background-size: 100%;
+  margin-left: -200px;
+  background-image: url(../img/house-left-bottom.png); }
+
+.jl-rb {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(../img/house-right-bottom.png);
+  background-size: 100%; }
+
+/*打卡*/
+.jl-punch-card {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(../img/house-right-bottom.png);
+  background-size: 100%;
+  width: 100px;
+  height: 60px;
+  margin-left: -50px;
+  margin-top: -30px;
+  background: #569597;
+  color: #FFFFFF;
+  font-size: 30px;
+  border-radius: 5px;
+  line-height: 60px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  opacity: 1;
+  box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.5); }
+
+/*左上马动画*/
+@keyframes jl-lt-move {
+  to {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: rotate(360deg) translateZ(200px); } }
+
+.jl-lt-move {
+  animation: jl-lt-move 2s forwards; }
+
+/*右上马动画*/
+@keyframes jl-rt-move {
+  to {
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    transform: rotate(-360deg) translateZ(200px); } }
+
+.jl-rt-move {
+  animation: jl-rt-move 2s forwards; }
+
+/*左下马动画*/
+@keyframes jl-lb-move {
+  to {
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    transform: rotate(360deg) translateZ(200px); } }
+
+.jl-lb-move {
+  animation: jl-lb-move 2s forwards; }
+
+/*右下马动画*/
+@keyframes jl-rb-move {
+  to {
+    top: 100%;
+    left: 100%;
+    opacity: 0;
+    transform: rotate(360deg) translateZ(200px); } }
+
+.jl-rb-move {
+  animation: jl-rb-move 2s forwards; }
+
+#jl-webcam {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  top: 50%;
+  margin-top: -200px;
+  display: none; }
+
+#jl-camera {
+  position: absolute;
+  top: 50%;
+  margin-top: -120px;
+  left: 50%;
+  margin-left: -120px; }
+
+.jl-take {
+  position: absolute;
+  top: 100%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  background: #569597;
+  cursor: pointer; }
+
+.jl-back {
+  position: absolute;
+  top: 100%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -75px;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  background: #569597;
+  cursor: pointer; }
+
+.jl-save {
+  position: absolute;
+  top: 100%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: 25px;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  background: #569597;
+  cursor: pointer; }
+
+#jl-result {
+  display: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -240px;
+  left: 50%;
+  margin-left: -240px; }
+
+#jl-form{
+	 position: absolute;
+  top: 100%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -240px;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+}
+#jl-form #jl-true{
+	width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  background: #569597;
+  cursor: pointer;
+}

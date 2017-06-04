@@ -1,0 +1,89 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+body {
+  background-image: url(../img/jl-bg-1.png);
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+.jl-header {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  text-align: center;
+  line-height: 60px;
+  /*logo*/
+  /*导航*/ }
+  .jl-header .jl-logo {
+    width: 200px;
+    height: 100%; }
+  .jl-header .jl-menu {
+    width: 966px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex; }
+    .jl-header .jl-menu li {
+      width: 50%;
+      height: 100%; }
+      .jl-header .jl-menu li:hover {
+        background: rgba(255, 255, 255, 0.5); }
+        .jl-header .jl-menu li:hover a {
+          color: white; }
+      .jl-header .jl-menu li a {
+        color: rgba(255, 255, 255, 0.7); }
+  .jl-header .jl-login {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around; }
+    .jl-header .jl-login .jl-user {
+      font-size: 12px;
+      color: white; }
+    .jl-header .jl-login .jl-cancel a {
+      font-size: 14px;
+      color: red; }
+
+/*选项卡*/
+.jl-cont {
+  width: 966px;
+  height: 100%;
+  padding: 30px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9);
+  box-sizing: border-box; }
+  .jl-cont .jl-tab {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 5px 10px black; }
+    .jl-cont .jl-tab tbody {
+      padding: 30px;
+      box-sizing: border-box; }
+      .jl-cont .jl-tab tbody tr {
+        width: 100%;
+        height: auto; }
+  .jl-cont .jl-record {
+    text-align: center;
+    border-collapse: collapse;
+    display: none; }
+    .jl-cont .jl-record td, .jl-cont .jl-record th {
+      border: 1px solid #888;
+      box-sizing: border-box; }
+
+/*selected*/
+.jl-header .jl-menu .selected {
+  background: rgba(255, 255, 255, 0.9); }
+  .jl-header .jl-menu .selected a {
+    color: rgba(0, 0, 0, 0.9); }
