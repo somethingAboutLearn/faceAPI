@@ -10,9 +10,11 @@
 ## 技术
 * 布局： html5 + css3
 * 交互： javascript 
-  * jquery.js
-  * jquery.validate.js 表单验证插件
-  * webcam.js 电脑摄像头的调用插件
+ * jquery.js
+ * jquery.validate.js 表单验证插件
+ * webcam.js 电脑摄像头的调用插件
 * 后台： php
 * 数据库： MySQL
+* 人脸识别的实现
+ 请参考 https://console.faceplusplus.com.cn/documents/4887586
 
